@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love sisii andrianiiiii❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* BACKGROUND STARS */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-2;
+    overflow:hidden;
+}
+
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    animation:blink 2s infinite;
+}
+
+@keyframes blink{
+    0%,100%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:1;
+    }
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:#ff0080;
+    filter:blur(180px);
+    opacity:0.3;
+    z-index:-1;
+}
+
+.hero-content{
+    animation:fadeUp 2s ease;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:700;
+    background:linear-gradient(to right,#ff0080,#ff7ac6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.typing{
+    font-size:28px;
+    margin-top:20px;
+    height:40px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+    color:#ccc;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    background:linear-gradient(to right,#ff0080,#ff4da6);
+    color:white;
+    font-weight:bold;
+    transition:0.4s;
+    box-shadow:0 0 20px #ff0080;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:20px;
+    min-width:100px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 15px rgba(255,0,128,0.3);
+}
+
+.time-box h2{
+    font-size:40px;
+    color:#ff4da6;
+}
+
+/* SLIDESHOW */
+
+.slideshow{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.slideshow h2{
+    font-size:45px;
+    margin-bottom:40px;
+}
+
+.slider{
+    width:90%;
+    max-width:900px;
+    height:500px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:30px;
+    position:relative;
+    box-shadow:0 0 30px rgba(255,0,128,0.3);
+}
+
+.slides{
+    display:flex;
+    width:100%;
+    transition:transform 0.5s ease-in-out;
+}
+
+.slides img{
+    min-width:100%;
+    height:500px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+/* LOVE LETTER */
+
+.letter{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.card{
+    max-width:850px;
+    margin:auto;
+    padding:50px;
+    background:rgba(255,255,255,0.07);
+    border-radius:30px;
+    backdrop-filter:blur(10px);
+    transform-style:preserve-3d;
+    transition:0.5s;
+    box-shadow:0 0 30px rgba(255,0,128,0.2);
+}
+
+.card:hover{
+    transform:rotateY(10deg) rotateX(10deg);
+}
+
+.card h2{
+    font-size:45px;
+    margin-bottom:30px;
+    color:#ff4da6;
+}
+
+.card p{
+    line-height:2;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* GIFT */
+
+.gift-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.gift-box{
+    font-size:120px;
+    cursor:pointer;
+    transition:0.5s;
+    animation:shake 2s infinite;
+}
+
+.gift-box:hover{
+    transform:scale(1.1);
+}
+
+@keyframes shake{
+    0%,100%{transform:rotate(0);}
+    25%{transform:rotate(5deg);}
+    75%{transform:rotate(-5deg);}
+}
+
+.surprise{
+    display:none;
+    margin-top:40px;
+    animation:fadeUp 1s ease;
+}
+
+/* SURPRISE PREMIUM */
+
+.surprise-card{
+    margin-top:40px;
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:30px;
+    max-width:850px;
+    margin-left:auto;
+    margin-right:auto;
+    backdrop-filter:blur(15px);
+    animation:fadeUp 1s ease;
+    box-shadow:0 0 40px rgba(255,0,128,0.3);
+}
+
+.surprise-card h1{
+    font-size:45px;
+    margin-bottom:25px;
+    background:linear-gradient(to right,#ff0080,#ff7ac6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.surprise-card p{
+    line-height:2;
+    color:#ddd;
+    font-size:18px;
+}
+
+.love-gallery{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.love-gallery img{
+    width:220px;
+    height:280px;
+    object-fit:cover;
+    border-radius:25px;
+    transition:0.5s;
+    box-shadow:0 0 20px rgba(255,0,128,0.3);
+}
+
+.love-gallery img:hover{
+    transform:scale(1.05) rotate(2deg);
+}
+
+.love-text{
+    margin-top:40px;
+    font-size:35px;
+    color:#ff4da6;
+}
+
+.love-btn{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(to right,#ff0080,#ff4da6);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(255,0,128,0.4);
+}
+
+.love-btn:hover{
+    transform:scale(1.08);
+}
+
+.hidden-message{
+    margin-top:30px;
+    display:none;
+    font-size:22px;
+    color:#fff;
+    animation:fadeUp 1s ease;
+}
+
+/* HEARTS */
+
+.heart{
+    position:fixed;
+    top:-10px;
+    color:#ff4da6;
+    animation:fall linear forwards;
+    z-index:999;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+.typing{
+    font-size:20px;
+}
+
+.slider{
+    height:300px;
+}
+
+.slides img{
+    height:300px;
+}
+
+.card{
+    padding:30px;
+}
+
+.card h2{
+    font-size:30px;
+}
+
+.surprise-card{
+    padding:25px;
+}
+
+.surprise-card h1{
+    font-size:30px;
+}
+
+.love-gallery img{
+    width:100%;
+    height:250px;
+}
+
+.love-text{
+    font-size:25px;
+}
+
+}
+
+/* SNOW LIGHT EFFECT */
+
+.light{
+    position:fixed;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    opacity:0.8;
+    animation:lightFall linear infinite;
+    z-index:-1;
+}
+
+@keyframes lightFall{
+    from{
+        transform:translateY(-10vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+/* LOVE QUOTES */
+
+.quotes-section{
+    padding:120px 20px;
+    text-align:center;
+}
+
+.quote-box{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,0.06);
+    padding:50px;
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 30px rgba(255,0,128,0.2);
+}
+
+.quote-text{
+    font-size:32px;
+    line-height:1.8;
+    color:#fff;
+    font-weight:300;
+}
+
+.quote-author{
+    margin-top:30px;
+    color:#ff7ac6;
+    font-size:20px;
+}
+
+.slider::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    border-radius:30px;
+    box-shadow:0 0 60px rgba(255,0,128,0.4);
+    pointer-events:none;
+}
+
+/* MANUAL SLIDER BUTTON */
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.4);
+    border:none;
+    color:white;
+    font-size:30px;
+    padding:10px 18px;
+    cursor:pointer;
+    border-radius:50%;
+    z-index:10;
+    transition:0.3s;
+}
+
+.prev:hover,
+.next:hover{
+    background:#ff0080;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+/* PREMIUM 3D EFFECT */
+
+.slider{
+    transform-style:preserve-3d;
+    transition:0.5s;
+}
+
+.slider:hover{
+    transform:
+    perspective(1000px)
+    rotateX(3deg)
+    rotateY(-3deg)
+    scale(1.01);
+}
+
+/* IMAGE HOVER 3D */
+
+.slides img{
+    transition:1s;
+}
+
+.slides img:hover{
+    transform:scale(1.03);
+    filter:brightness(1.1);
+}
+
+/* GLOW EFFECT */
+
+.hero h1{
+    text-shadow:
+    0 0 10px rgba(255,0,128,0.8),
+    0 0 20px rgba(255,0,128,0.6),
+    0 0 40px rgba(255,0,128,0.4);
+}
+
+/* FLOATING */
+
+.quote-box,
+.card,
+.surprise-card{
+    animation:floating 5s ease-in-out infinite;
+}
+
+@keyframes floating{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* LOVE GLOW BORDER */
+
+.card::before,
+.surprise-card::before{
+    content:'';
+    position:absolute;
+    inset:-2px;
+    border-radius:30px;
+    background:linear-gradient(
+    45deg,
+    #ff0080,
+    #ff4da6,
+    #ff7ac6,
+    #ff0080
+    );
+    z-index:-1;
+    filter:blur(15px);
+    opacity:0.5;
+}
+
+/* BUTTON EFFECT */
+
+.btn,
+.love-btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::before,
+.love-btn::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.3);
+    transform:skewX(-20deg);
+    transition:0.7s;
+}
+
+.btn:hover::before,
+.love-btn:hover::before{
+    left:120%;
+}
+
+/* AURORA BACKGROUND */
+
+.aurora{
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:-3;
+}
+
+.aurora span{
+    position:absolute;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.25;
+    animation:moveAurora 18s infinite alternate ease-in-out;
+}
+
+.aurora span:nth-child(1){
+    background:#ff0080;
+    top:-100px;
+    left:-100px;
+}
+
+.aurora span:nth-child(2){
+    background:#7a5cff;
+    bottom:-150px;
+    right:-100px;
+    animation-delay:5s;
+}
+
+.aurora span:nth-child(3){
+    background:#00ffe7;
+    top:40%;
+    left:40%;
+    animation-delay:10s;
+}
+
+@keyframes moveAurora{
+    0%{
+        transform:translate(0,0) scale(1);
+    }
+    100%{
+        transform:translate(100px,-80px) scale(1.3);
+    }
+}
+
+/* MUSIC PLAYER */
+
+.music-player{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:rgba(255,255,255,0.08);
+    padding:15px 20px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px rgba(255,0,128,0.3);
+    z-index:999;
+}
+
+.music-player button{
+    background:linear-gradient(to right,#ff0080,#ff4da6);
+    border:none;
+    color:white;
+    padding:10px 20px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* FLOATING LOVE TEXT */
+
+.floating-love{
+    position:fixed;
+    color:white;
+    font-size:14px;
+    pointer-events:none;
+    animation:floatLove linear forwards;
+    z-index:999;
+    opacity:0.8;
+}
+
+@keyframes floatLove{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+}
+
+/* GLOW LINE */
+
+.glow-line{
+    width:200px;
+    height:4px;
+    margin:20px auto;
+    border-radius:20px;
+    background:linear-gradient(to right,#ff0080,#ff7ac6);
+    box-shadow:0 0 20px #ff0080;
+}
+
+/* PREMIUM SCROLL BAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#ff0080,#ff4da6);
+    border-radius:20px;
+}
+
+/* LOADING SCREEN */
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:#050505;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:99999;
+    transition:1s;
+}
+
+.loader h1{
+    font-size:60px;
+    background:linear-gradient(to right,#ff0080,#ff7ac6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:pulse 1.5s infinite;
+}
+
+.loader p{
+    color:#ccc;
+    margin-top:15px;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* LIVE CLOCK */
+
+.live-clock{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:rgba(255,255,255,0.08);
+    padding:12px 20px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px rgba(255,0,128,0.3);
+    z-index:999;
+    font-size:18px;
+}
+
+/* CURSOR LOVE */
+
+body{
+    cursor:none;
+}
+
+.cursor-love{
+    position:fixed;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#ff4da6;
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:99999;
+    box-shadow:0 0 20px #ff0080;
+}
+
+/* SPARKLE EFFECT */
+
+.spark{
+    position:fixed;
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius:50%;
+    pointer-events:none;
+    animation:sparkle 1s linear forwards;
+    z-index:9999;
+}
+
+@keyframes sparkle{
+    to{
+        transform:translateY(-40px) scale(0);
+        opacity:0;
+    }
+}
+
+/* TITLE GLOW */
+
+.hero h1{
+    animation:titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow{
+    from{
+        text-shadow:
+        0 0 10px #ff0080,
+        0 0 20px #ff0080;
+    }
+    to{
+        text-shadow:
+        0 0 20px #ff7ac6,
+        0 0 40px #ff4da6;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+<div class="loader" id="loader">
+    <h1>❤️</h1>
+    <p>Loading Love For You...</p>
+</div>
+
+<!-- LIVE CLOCK -->
+
+<div class="live-clock" id="clock">
+00:00:00
+</div>
+
+<!-- CURSOR LOVE -->
+
+<div class="cursor-love" id="cursorLove"></div>
+
+    <!-- AURORA BACKGROUND -->
+
+<div class="aurora">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- MUSIC PLAYER -->
+
+<div class="music-player">
+    <button onclick="toggleMusic()">
+        🎵 Play / Pause
+    </button>
+</div>
+
+<div class="stars"></div>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Happy Birthday sayanggg kuuuu ❤️</h1>
+
+<div class="typing" id="typing"></div>
+
+<p>
+Untuk seseorang yang paling spesial dalam hidupku dan perempuan yang paling hebat yang aku kenallll ✨
+</p>
+
+<div class="countdown">
+
+<div class="time-box">
+<h2 id="days">00</h2>
+<span>Hari</span>
+</div>
+
+<div class="time-box">
+<h2 id="hours">00</h2>
+<span>Jam</span>
+</div>
+
+<div class="time-box">
+<h2 id="minutes">00</h2>
+<span>Menit</span>
+</div>
+
+<div class="time-box">
+<h2 id="seconds">00</h2>
+<span>Detik</span>
+</div>
+
+</div>
+
+<a href="#gallery" class="btn">Mulai Kenangan 💕</a>
+
+</div>
+
+</section>
+
+<section class="slideshow" id="gallery">
+
+<h2>Our Memories 📸</h2>
+
+<div class="glow-line"></div>
+
+<div class="slider">
+
+<div class="slides" id="slides">
+
+<img src="sisi3.jpeg">
+<img src="sisi2.jpeg">
+<img src="sisi4.jpeg">
+<img src="sisi8.png">
+<img src="sisi5.png">
+<img src="sisi6.png">
+
+</div>
+
+<button class="prev" onclick="slidePrev()">❮</button>
+<button class="next" onclick="slideNext()">❯</button>
+
+</div>
+
+</section>
+
+<section class="letter">
+
+<div class="card">
+
+<h2>Untuk Kamu sisi andriani❤️</h2>
+
+<div class="glow-line"></div>
+
+<p>
+Selamat ulang tahun sayangku 🎂<br><br>
+
+Semoga semua impianmu tercapai,selalu sehat, selalu bahagia,
+dan semoga kita terus bersama sampai kapanpun 
+dan sisi tetap jadi orng yang hebatt yaaa, dan kalau adsa apa apa cerita sama aku yaa
+semoga sayanggg di ulangtahun yang ini jadi lebih baik dari kemarin dalam hidup sisi yaaa
+semoga di tahun ini semua yang syanggggg impikan di tahun tahun kemarinsemua tercapai yaa sayanggg kuuu 
+maaf yaaa aku tidak bisa rayakan langsung ulang tahun kamu
+kare aku jauh maaf yaa sayang kuuu Happy birthday sisiii orng yang paling aku sayangggggg,
+akuu pulagggg dari konkep kitarayakann yaaaa akan akuuu kasi semua yangg kamuu mau dan inginnn sayanggg kuuu lovee youu More  ❤️
+</p>
+
+</div>
+
+</section>
+
+<section class="gift-section">
+
+<h2 style="margin-bottom:30px;font-size:40px;">
+Klik Kadonya 🎁
+</h2>
+
+<div class="gift-box" onclick="openGift()">
+🎁
+</div>
+
+<div class="surprise" id="surprise">
+
+<div class="surprise-card">
+
+<h1>Happy Birthday My Love ❤️</h1>
+
+<p>
+Terima kasih sudah hadir di hidupku ✨<br><br>
+
+Kamu adalah alasan aku bahagia setiap hari,
+aku berharap kita bisa terus bersama selamanya dan akuu harappp setiapp ada masalahhh kita selesaikan baik baik yaa, tidaaa perlu
+ada kata putuss yaaa, karena kau ingin seiusss akuu ingin bangun rmah impian nyaa sayangggg dan semua yang sayang belum dapatkan
+akuu kan beri semua nyaa dari kasih sayang barang makanan pergi pergi kemana punn jadiii akuuu harappp sayanggg bertahan sampai akuuu 
+buktikan semua yaa, kan ini akuuu mau lulus mii jugaa jadii bersabarr yaaa dan akuuu harappp kamuu bisaaa terimaaa semua kekurangan kuu dan 
+kau bisa terimaaa kalau tidak sesuai harapan sayangggg tapi akuuu usahakn tidakkk akannn kasiii kecewaaa sayanggg dan saya harappp kita bisa saling
+memaaaf kan akalau ada maslah yaa sayangg, salinggg mengertii karenaini kita masi mau lewati berbagai jalan rintangan akuu yakinnnn 
+mustahill kitaa tidak ada masalah selama jalankana hubungan ini jadiii salinggg menguatkan yaa sayangggg love youuu  ❤️
+</p>
+
+<div class="love-gallery">
+
+<img src="sisi4.jpeg">
+<img src="sisi5.png">
+<img src="sisi6.png">
+
+</div>
+
+<h2 class="love-text">
+I Love You More Everyday ❤️
+</h2>
+
+<button class="love-btn" onclick="showMessage()">
+Klik Aku 💌
+</button>
+
+<div id="hiddenMessage" class="hidden-message">
+Aku harap ulang tahun ini menjadi awal dari semua kebahagiaanmu sayngggkuuuuuu selamattt yaaaaa✨❤️
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<audio autoplay loop id="bgMusic">
+<source src="hingga tua bersama.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* TYPING EFFECT */
+
+const text = "Untuk Pacar Tercantik di Dunia ❤️";
+let index = 0;
+
+function typing(){
+
+    if(index < text.length){
+
+        document.getElementById("typing").innerHTML += text.charAt(index);
+
+        index++;
+
+        setTimeout(typing,100);
+
+    }
+
+}
+
+typing();
+
+/* COUNTDOWN */
+
+const birthday = new Date("2026-05-22T00:00:00").getTime();
+
+setInterval(function(){
+
+    const now = new Date().getTime();
+
+    const distance = birthday - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+/* HEART RAIN */
+
+function createHeart(){
+
+    const heart = document.createElement('div');
+
+    heart.classList.add('heart');
+
+    heart.innerHTML = '❤';
+
+    heart.style.left = Math.random() * 100 + 'vw';
+
+    heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+
+    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    },5000);
+
+}
+
+setInterval(createHeart,200);
+
+/* STARS */
+
+for(let i=0;i<150;i++){
+
+    let star = document.createElement('div');
+
+    star.classList.add('star');
+
+    star.style.left = Math.random()*100 + '%';
+
+    star.style.top = Math.random()*100 + '%';
+
+    star.style.animationDuration = Math.random()*3 + 2 + 's';
+
+    document.querySelector('.stars').appendChild(star);
+
+}
+
+/* GIFT */
+
+function openGift(){
+
+    document.getElementById('surprise').style.display='block';
+
+}
+
+/* SECRET MESSAGE */
+
+function showMessage(){
+
+    document.getElementById("hiddenMessage").style.display = "block";
+
+}
+
+/* LIGHT EFFECT */
+
+function createLight(){
+
+    const light = document.createElement('div');
+
+    light.classList.add('light');
+
+    light.style.left = Math.random() * 100 + 'vw';
+
+    light.style.animationDuration = Math.random() * 5 + 3 + 's';
+
+    document.body.appendChild(light);
+
+    setTimeout(() => {
+        light.remove();
+    },8000);
+
+}
+
+setInterval(createLight,300);
+
+/* MANUAL SLIDER */
+
+let currentSlide = 0;
+
+const slides = document.getElementById("slides");
+
+const totalSlides = slides.children.length;
+
+function updateSlide(){
+
+    slides.style.transform =
+    `translateX(-${currentSlide * 100}%)`;
+
+}
+
+function slideNext(){
+
+    currentSlide++;
+
+    if(currentSlide >= totalSlides){
+
+        currentSlide = 0;
+
+    }
+
+    updateSlide();
+
+}
+
+function slidePrev(){
+
+    currentSlide--;
+
+    if(currentSlide < 0){
+
+        currentSlide = totalSlides - 1;
+
+    }
+
+    updateSlide();
+
+}
+
+/* MOUSE GLOW EFFECT */
+
+document.addEventListener("mousemove",(e)=>{
+
+    const glow = document.createElement("div");
+
+    glow.style.position = "fixed";
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+    glow.style.width = "10px";
+    glow.style.height = "10px";
+    glow.style.borderRadius = "50%";
+    glow.style.background = "#ff4da6";
+    glow.style.pointerEvents = "none";
+    glow.style.boxShadow = "0 0 20px #ff0080";
+    glow.style.zIndex = "999";
+    glow.style.opacity = "0.7";
+
+    document.body.appendChild(glow);
+
+    setTimeout(()=>{
+        glow.remove();
+    },300);
+
+});
+
+/* MUSIC CONTROL */
+
+const music = document.getElementById("bgMusic");
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.play();
+
+    }else{
+
+        music.pause();
+
+    }
+
+}
+
+/* FLOATING LOVE TEXT */
+
+const loveTexts = [
+    "I Love You ❤️",
+    "Forever With You 💕",
+    "My Favorite Person ✨",
+    "Happy Birthday 🎂",
+    "Love You More ❤️"
+];
+
+document.addEventListener("click",(e)=>{
+
+    const text = document.createElement("div");
+
+    text.classList.add("floating-love");
+
+    text.innerHTML =
+    loveTexts[Math.floor(Math.random()*loveTexts.length)];
+
+    text.style.left = e.clientX + "px";
+    text.style.top = e.clientY + "px";
+
+    document.body.appendChild(text);
+
+    setTimeout(()=>{
+        text.remove();
+    },3000);
+
+});
+
+/* LOADER */
+
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        document.getElementById("loader").style.opacity="0";
+
+        setTimeout(()=>{
+            document.getElementById("loader").style.display="none";
+        },1000);
+
+    },2000);
+
+});
+
+/* LIVE CLOCK */
+
+function updateClock(){
+
+    const now = new Date();
+
+    let h = String(now.getHours()).padStart(2,'0');
+    let m = String(now.getMinutes()).padStart(2,'0');
+    let s = String(now.getSeconds()).padStart(2,'0');
+
+    document.getElementById("clock").innerHTML =
+    `${h}:${m}:${s}`;
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+/* CURSOR LOVE */
+
+const cursor = document.getElementById("cursorLove");
+
+document.addEventListener("mousemove",(e)=>{
+
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+});
+
+/* SPARK EFFECT */
+
+document.addEventListener("click",(e)=>{
+
+    for(let i=0;i<10;i++){
+
+        const spark = document.createElement("div");
+
+        spark.classList.add("spark");
+
+        spark.style.left = e.clientX + "px";
+        spark.style.top = e.clientY + "px";
+
+        spark.style.transform =
+        `translate(
+        ${Math.random()*80-40}px,
+        ${Math.random()*80-40}px
+        )`;
+
+        document.body.appendChild(spark);
+
+        setTimeout(()=>{
+            spark.remove();
+        },1000);
+
+    }
+
+});
+
+/* AUTO SLIDE */
+
+setInterval(()=>{
+
+    slideNext();
+
+},4000);
+
+</script>
+
+<!-- LOVE QUOTES -->
+
+<section class="quotes-section">
+
+<div class="quote-box">
+
+<div class="spin-heart" style="font-size:60px;">
+❤️
+</div>
+
+<p class="quote-text">
+" Aku tidak tahu masa depan seperti apa yang akan terjadi,
+tapi selama ada kamu,
+aku yakin semuanya akan terasa indah ✨ "
+</p>
+
+<div class="quote-author">
+— Untuk Kamu yang Aku Sayang ❤️
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
